@@ -2,16 +2,28 @@
 
 .hero-element {
     position: absolute;
-    top: 2.25rem;
-    right: 2.75rem;
-    height: 25rem;
-    width: 27.5rem;
+    inset: 0;
     border-radius: 5rem 1rem;
-    display: flex;
-    align-items: flex-end;
-    padding: 1.25rem;
-    font-size: 0.875rem;
+
     background-image: url('../images/human-rights.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-element p {
+    position: absolute;
+    transform: none;
+
+    text-align: center;
+    color:#1d342e;
+    opacity: 70%;
+    font-size: 6rem;
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
