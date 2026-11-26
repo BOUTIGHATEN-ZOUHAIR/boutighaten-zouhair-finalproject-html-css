@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+
+body {
+    font-family: Inter, sans-serif
+}
+
+.titre {
+    font-family:Fraunces,serif
+}
+
 .hero-element {
     position: absolute;
     inset: 0;
