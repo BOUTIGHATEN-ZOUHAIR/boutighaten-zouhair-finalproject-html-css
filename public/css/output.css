@@ -274,24 +274,11 @@
   .inline-block {
     display: inline-block;
   }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .size-11 {
-    width: calc(var(--spacing) * 11);
-    height: calc(var(--spacing) * 11);
-  }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
-  .h-15 {
-    height: calc(var(--spacing) * 15);
-  }
   .h-16 {
     height: calc(var(--spacing) * 16);
-  }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
   }
   .h-58 {
     height: calc(var(--spacing) * 58);
@@ -351,12 +338,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
-  .place-items-center {
-    place-items: center;
   }
   .content-start {
     align-content: flex-start;
@@ -491,30 +472,19 @@
   .bg-\[\#F6F1E8\] {
     background-color: #F6F1E8;
   }
+  .bg-\[\#e7e1d6\] {
+    background-color: #e7e1d6;
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-gradient-to-bl {
+    --tw-gradient-position: to bottom left in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-gradient-to-br {
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
-  }
-  .bg-\[url\(\'\/public\/images\/\'\)\] {
-    background-image: url('/public/images/');
-  }
-  .bg-\[url\(\'\/public\/images\/background-assistance\'\)\] {
-    background-image: url('/public/images/background-assistance');
-  }
-  .bg-\[url\(\'\/public\/images\/background-assistance\.\'\)\] {
-    background-image: url('/public/images/background-assistance.');
-  }
-  .bg-\[url\(\'\/public\/images\/images-\(5\)\.jpeg\'\)\] {
-    background-image: url('/public/images/images-(5).jpeg');
-  }
-  .bg-\[url\(\'\/public\/images\/images_\(5\)\.jpeg\'\)\] {
-    background-image: url('/public/images/images_(5).jpeg');
-  }
-  .bg-\[url\(\'\/public\/images\/imagws-\(5\)\.jpeg\'\)\] {
-    background-image: url('/public/images/imagws-(5).jpeg');
   }
   .to-white {
     --tw-gradient-to: var(--color-white);
@@ -525,12 +495,6 @@
   }
   .bg-cover {
     background-size: cover;
-  }
-  .bg-center {
-    background-position: center;
-  }
-  .bg-no-repeat {
-    background-repeat: no-repeat;
   }
   .object-cover {
     object-fit: cover;
@@ -552,9 +516,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .px-1 {
-    padding-inline: var(--spacing);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -588,9 +549,6 @@
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
-  }
-  .pt-6 {
-    padding-top: calc(var(--spacing) * 6);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -644,6 +602,10 @@
   .text-xs {
     font-size: var(--text-xs);
     line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .leading-\[1\.1\] {
+    --tw-leading: 1.1;
+    line-height: 1.1;
   }
   .leading-\[1\.08\] {
     --tw-leading: 1.08;
@@ -709,41 +671,11 @@
   .text-\[\#F6F1E8\] {
     color: #F6F1E8;
   }
-  .text-\[\#\] {
-    color: #;
-  }
-  .text-\[\#b43c24\] {
-    color: #b43c24;
-  }
-  .text-\[\#b95\] {
-    color: #b95;
-  }
-  .text-\[\#b95643\] {
-    color: #b95643;
-  }
-  .text-\[\#b\] {
-    color: #b;
-  }
-  .text-\[\#ca8476\] {
-    color: #ca8476;
-  }
-  .text-\[\#d3968a\] {
-    color: #d3968a;
-  }
-  .text-\[\#ec6a50\] {
-    color: #ec6a50;
-  }
-  .text-\[\#ee5a3c\] {
-    color: #ee5a3c;
-  }
   .text-white {
     color: var(--color-white);
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .opacity-5 {
-    opacity: 5%;
   }
   .opacity-80 {
     opacity: 80%;
@@ -762,11 +694,6 @@
   .shadow-sm {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-transform {
     transition-property: transform, translate, scale, rotate;
@@ -823,6 +750,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:order-first {
+      order: -9999;
+    }
     .md\:flex {
       display: flex;
     }
@@ -834,6 +764,9 @@
     }
     .md\:h-full {
       height: 100%;
+    }
+    .md\:min-h-\[360px\] {
+      min-height: 360px;
     }
     .md\:min-h-\[440px\] {
       min-height: 440px;
@@ -853,8 +786,32 @@
     .md\:justify-between {
       justify-content: space-between;
     }
+    .md\:\[mask-image\:linear-gradient\(to_\,transparent\,black_30\%\)\] {
+      mask-image: linear-gradient(to ,transparent,black 30%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_left\,transparent\,black_30\%\)\] {
+      mask-image: linear-gradient(to left,transparent,black 30%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_r\,transparent\,black_30\%\)\] {
+      mask-image: linear-gradient(to r,transparent,black 30%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_reght\,transparent\,black_30\%\)\] {
+      mask-image: linear-gradient(to reght,transparent,black 30%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_\%\)\] {
+      mask-image: linear-gradient(to right,transparent,black %);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_3\%\)\] {
+      mask-image: linear-gradient(to right,transparent,black 3%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_10\%\)\] {
+      mask-image: linear-gradient(to right,transparent,black 10%);
+    }
     .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_30\%\)\] {
       mask-image: linear-gradient(to right,transparent,black 30%);
+    }
+    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_40\%\)\] {
+      mask-image: linear-gradient(to right,transparent,black 40%);
     }
     .md\:p-8 {
       padding: calc(var(--spacing) * 8);
@@ -864,12 +821,6 @@
     }
     .md\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
-    }
-    .md\:px-6 {
-      padding-inline: calc(var(--spacing) * 6);
-    }
-    .md\:py-3 {
-      padding-block: calc(var(--spacing) * 3);
     }
     .md\:py-20 {
       padding-block: calc(var(--spacing) * 20);
@@ -909,9 +860,6 @@
     }
     .lg\:grid-cols-5 {
       grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-    .lg\:px-0 {
-      padding-inline: 0px;
     }
     .lg\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
