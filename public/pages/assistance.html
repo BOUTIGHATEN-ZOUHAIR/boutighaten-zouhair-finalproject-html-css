@@ -8,12 +8,13 @@
         <link rel="stylesheet" href="../../public/css/input.css">
         <link rel="stylesheet" href="../../public/css/stayl.css">
     </head>
-    <body class="bg-[#e7e1d6] text-[#203D35] leading-relaxed">
+    <body class="relative bg-[#e7e1d6] text-[#203D35] leading-relaxed">
 
         <header class="bg-white sticky top-0 z-50 shadow-sm">
             <div
                 class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
-                <a href="../../index.html" class="titre text-2xl font-bold">Voix <span
+                <a href="../../index.html" class="titre text-2xl font-bold">Voix
+                    <span
                         class="text-[#B95643]">&amp;</span> Droits</a>
 
                 <nav
@@ -34,11 +35,70 @@
                         class="bg-[#B95643] text-white text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-[#9f4533]">Besoin
                         d’aide ?</a>
 
-                    <details class="md:hidden relative">
+                    <details class="md:hidden">
                         <summary
-                            class="cursor-pointer list-none border-2 border-[#203D35] rounded-full px-3 py-2 text-sm font-semibold">Menu</summary>
+                            class="cursor-pointer list-none border-2 border-[#203D35] rounded-full px-3 py-2 text-sm font-semibold"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <lineargradient id="menu-glass-g"
+                                        gradientUnits="userSpaceOnUse" x1="0"
+                                        y1="0" x2="0" y2="24">
+                                        <stop offset="0"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.78" />
+                                        <stop offset="1"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.36" />
+                                    </lineargradient>
+                                    <lineargradient id="menu-glass-ge"
+                                        gradientUnits="userSpaceOnUse" x1="0"
+                                        y1="0" x2="0" y2="24">
+                                        <stop offset="0"
+                                            stop-color="currentColor"
+                                            stop-opacity="1" />
+                                        <stop offset="1"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.55" />
+                                    </lineargradient>
+                                    <mask id="menu-glass-gm"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <path d="M4 6L20 6" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 12L20 12" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 18L20 18" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </mask>
+                                    <mask id="menu-glass-gp"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                    </mask>
+                                    <mask id="menu-glass-go"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                    </mask>
+                                </defs>
+                                <g mask="url(#menu-glass-gp)">
+                                </g>
+                                <rect x="-2" y="-2" width="28" height="28"
+                                    fill="url(#menu-glass-ge)"
+                                    mask="url(#menu-glass-gm)" />
+                            </svg></summary>
                         <div
-                            class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg p-4 flex flex-col gap-3 text-sm font-medium">
+                            class="absolute right-0 mt-2 w-full bg-white rounded-xl shadow-lg p-4 flex flex-col gap-3 text-sm font-medium">
                             <a href="../../index.html"
                                 class="hover:text-[#B95643]">Accueil</a>
                             <a href="index.html#droits"
@@ -72,44 +132,300 @@
                 accompagnement</p>
             <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3 ">
                 <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">01</span><h3
-                        class="titre text-xl font-bold">Association Démocratique
-                        des Femmes du
-                        Maroc</h3><p class="text-sm">Samira Bikarden · Rue Ibn
-                        Mokla villa 2-les Orangers,
-                        Rabat</p><p class="text-sm"><br>Tel : 0537 70 60 81 <br>
-                        association.adfm@menara.ma<br>https://mrawomen.ma/</p><a
-                        href="https://mrawomen.ma/"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">01</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Association Démocratique des Femmes du Maroc
+                    </h3>
+
+                    <p class="text-sm">
+                        Samira Bikarden · Rue Ibn Mokla villa 2-les Orangers,
+                        Rabat
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span> 0537 70 60 81</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-c1"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-c1)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">association.adfm@menara.ma</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-c2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-c2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://mrawomen.ma/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://mrawomen.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
+
                 <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">02</span><h3
-                        class="titre text-xl font-bold">Centre Annajda SOS /
-                        Union de l’Action
-                        Féminine </h3><p class="text-sm">Zahra Louardi · 425,
-                        Avenue Hassan II, n°3-Diour
-                        Jamaâ, Rabat</p><p class="text-sm"><br>
-                        Tel : 0537-70-09-64 <br>
-                        uaf.rabat@gmail.com<br>https://mrawomen.ma/</p><a
-                        href="https://mrawomen.ma/"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">02</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Centre Annajda SOS / Union de l’Action Féminine
+                    </h3>
+
+                    <p class="text-sm">
+                        Zahra Louardi · 425, Avenue Hassan II, n°3-Diour Jamaâ,
+                        Rabat
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span> 0537-70-09-64</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">uaf.rabat@gmail.com</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://mrawomen.ma/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://mrawomen.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
+
                 <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">03</span><h3
-                        class="titre text-xl font-bold">Jossour Forum des femmes
-                        marocaines
-                        Centre de lutte contre l’analphabétisme</h3><p
-                        class="text-sm">Oumaima Achour · 131, Av Hassan II Apt
-                        n°44, à coté
-                        de Mamounia, Rabat</p><p class="text-sm">Tel :
-                        0537-26-17-04 <br>
-                        jossourffm@yahoo.fr<br>https://mrawomen.ma/</p><a
-                        href="https://mrawomen.ma/"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">03</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Jossour Forum des femmes marocaines Centre de lutte
+                        contre l’analphabétisme
+                    </h3>
+
+                    <p class="text-sm">
+                        Oumaima Achour · 131, Av Hassan II Apt n°44, à coté de
+                        Mamounia, Rabat
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span> 0537-26-17-04</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-3"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-3)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">jossourffm@yahoo.fr</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-3"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C14.209 2.5 16 6.753 16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-3)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://mrawomen.ma/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://mrawomen.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
             </div>
         </section>
 
@@ -120,69 +436,538 @@
                 moyen de contact</p>
             <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">01</span><h3
-                        class="titre text-xl font-bold">Khaoula Ouchane</h3><p
-                        class="text-sm"> Psychologue Clinicienne et
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">01</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Khaoula Ouchane
+                    </h3>
+
+                    <p class="text-sm">
+                        Psychologue Clinicienne et
                         Psychothérapeute · Casablanca (Quartier des Hôpitaux, 75
-                        Rue Abou Alaa Zahr).</p><p class="text-sm">Tel : 06 44
-                        88 26 51 <br>drKhaoulaOuchane@gmail.com</p><a
-                        href="https://docly.ma/"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
+                        Rue Abou Alaa Zahr).
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span>06 44 88 26 51</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-c1"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-c1)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">drKhaoulaOuchane@gmail.com</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-c2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-c2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://mrawomen.ma/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://mrawomen.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
+              <article
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">01</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Khaoula Ouchane
+                    </h3>
+
+                    <p class="text-sm">
+                        Psychologue Clinicienne et
+                        Psychothérapeute · Casablanca (Quartier des Hôpitaux, 75
+                        Rue Abou Alaa Zahr).
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span>06 44 88 26 51</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-c1"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-c1)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">drKhaoulaOuchane@gmail.com</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-c2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-c2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://mrawomen.ma/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://mrawomen.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
                 <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">02</span><h3
-                        class="titre text-xl font-bold">Salma Ouazzani
-                        Taybi</h3><p class="text-sm">Psychologue Casablanca
-                        (Rue Cadi Iyass, Immeuble Wassia, 3e étage)</p><p
-                        class="text-sm">Tel : 06 24 02 81 23
-                        drsalmaouezzani@gmail.com<br>https://www.salmaouazzanitaybi.com/</p><a
-                        href="https://www.salmaouazzanitaybi.com/"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
-                <article
-                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105"><span
-                        class="titre text-2xl text-[#B95643]">03</span><h3
-                        class="titre text-xl font-bold">Hajar Dany</h3><p
-                        class="text-sm">Psychologue Clinicienne et
-                        Psychothérapeute · Casablanca (22 Bd El Qods, Résidence
-                        Jet Center, 1er étage)</p><p class="text-sm">Tel : 06 37
-                        34 43 76 <br> contact@dabadoc.com</p><a
-                        href="https://www.dabadoc.com/ma/psychologue/casablanca/hajar-dany"
-                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">En
-                        savoir plus</a></article>
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105">
+                    <span class="titre text-2xl text-[#B95643]">02</span>
+
+                    <h3 class="titre text-xl font-bold">
+                        Salma Ouazzani Taybi
+                    </h3>
+
+                    <p class="text-sm">
+                      Psychologue Casablanca (Rue Cadi lyass,Immeuble Wassia, 3e étage)
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span> 06 24 02 81 23</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-c1"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-c1)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">drsalmaouezzani@gmail.com</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-c2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-c2)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">https://www.salmaouazzanitaybi.com/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://www.salmaouazzanitaybi.com/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
+                </article>
+               
             </div>
         </section>
-        <section class="section">
-            <h2 class="titre">Organismes et institutions</h2>
-            <p class="sous-titre">Protection, services sociaux, droits
-                humains</p>
+        <section class="max-w-6xl mx-auto px-5 pb-12">
+            <h2 class="titre text-2xl md:text-3xl font-bold">Psychologues et
+                santé mentale</h2>
+            <p class="text-[#B95643] font-semibold mb-5">Spécialité, ville,
+                moyen de contact</p>
 
-            <div class="grille">
+            <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
 
-                <article class="carte">
-                    <span class="titre numero">01</span>
-                    <h3 class="titre">[Nom de la structure]</h3>
-                    <p>[Mission] · [Ville / région]</p>
-                    <p>[Téléphone] · [Email]<br>[Site web]</p>
-                    <a href="#" class="bouton">En savoir plus</a>
+                <article
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105 transition-transform duration-200">
+                    <span class="titre text-2xl text-[#B95643]">01</span>
+
+                    <h3 class="titre text-xl font-bold">Hajar Dany</h3>
+
+                    <p class="text-sm">
+                        Psychologue Clinicienne et Psychothérapeute · Casablanca
+                        (Quartier des Hôpitaux, 75 Rue Abou Alaa Zahr).
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span>06 44 88 26 51</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-psy1"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-psy1)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">drKhaoulaOuchane@gmail.com</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://docly.ma/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
                 </article>
 
-                <article class="carte">
-                    <span class="titre numero">02</span>
-                    <h3 class="titre">[Nom de la structure]</h3>
-                    <p>[Mission] · [Ville / région]</p>
-                    <p>[Téléphone] · [Email]<br>[Site web]</p>
-                    <a href="#" class="bouton">En savoir plus</a>
+                <article
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105 transition-transform duration-200">
+                    <span class="titre text-2xl text-[#B95643]">02</span>
+
+                    <h3 class="titre text-xl font-bold">Salma Ouazzani
+                        Taybi</h3>
+
+                    <p class="text-sm">
+                        Psychologue Casablanca (Rue Cadi Iyass, Immeuble Wassia,
+                        3e étage)
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span>06 24 02 81 23</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-psy2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-psy2)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">drsalmaouezzani@gmail.com</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="globe-outline-psy2"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="4.69,10.69 0.75,10.69 0.31,13.31 2.06,13.31"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.31,13.31 23.25,13.31 23.69,10.69 21.94,10.69"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M21.5 12C21.5 17.247 17.247 21.5 12 21.5C6.753 21.5 2.5 17.247 2.5 12C2.5 6.753 6.753 2.5 12 2.5C17.247 2.5 21.5 6.753 21.5 12Z" />
+                                    <path
+                                        d="M16 12C16 17.247 14.209 21.5 12 21.5C9.791 21.5 8 17.247 8 12C8 6.753 9.791 2.5 12 2.5C14.209 2.5 16 6.753 16 12Z" />
+                                    <path d="M2.5 12L21.5 12"
+                                        mask="url(#globe-outline-psy2)" />
+                                </g>
+                            </svg>
+                            <span
+                                class="break-all">https://www.salmaouazzanitaybi.com/</span>
+                        </li>
+                    </ul>
+
+                    <a href="https://www.salmaouazzanitaybi.com/"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
                 </article>
 
-                <article class="carte">
-                    <span class="titre numero">03</span>
-                    <h3 class="titre">[Nom de la structure]</h3>
-                    <p>[Mission] · [Ville / région]</p>
-                    <p>[Téléphone] · [Email]<br>[Site web]</p>
-                    <a href="#" class="bouton">En savoir plus</a>
+                <article
+                    class="bg-white rounded-2xl p-6 space-y-2 scale-100 hover:scale-105 transition-transform duration-200">
+                    <span class="titre text-2xl text-[#B95643]">03</span>
+
+                    <h3 class="titre text-xl font-bold">Hajar Dany</h3>
+
+                    <p class="text-sm">
+                        Psychologue Clinicienne et Psychothérapeute •
+Casablanca (22 Bd El Qods, Résidence Jet Center, ler étage)
+                    </p>
+
+                    <ul class="text-sm space-y-2 py-2">
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M3.656 6.344L5.959 4.041L7.705 4.292L9.522 7.624L9.377 9.279L8.765 10.044L8.784 11.941L10.5 14L12.063 15.25L13.937 15.25L14.721 14.623L16.376 14.478L19.708 16.295L19.959 18.041L17.601 20.399L16.176 20.794L13.252 20.063L12.784 19.856L7.331 16.221L6.822 15.644L4 10L3.293 7.879L3.656 6.344Z" />
+                                </g>
+                            </svg>
+                            <span>06 37 34 43 76</span>
+                        </li>
+
+                        <li class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5 shrink-0" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <mask id="mail-outline-psy3"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                        <polygon
+                                            points="6.02,6.38 2.98,3.87 0.98,5.62 2.33,6.74"
+                                            fill="#000" />
+                                        <polygon
+                                            points="19.65,8.4 22.69,5.9 21.35,3.6 20,4.71"
+                                            fill="#000" />
+                                    </mask>
+                                </defs>
+                                <g fill="none" stroke="currentColor"
+                                    stroke-width="1.75" stroke-linecap="butt"
+                                    stroke-linejoin="miter">
+                                    <path
+                                        d="M4.5 5L19.5 5L21 6.5L21 17.5L19.5 19L4.5 19L3 17.5L3 6.5L4.5 5Z" />
+                                    <path
+                                        d="M3.5 6L11.046 12.215L12.954 12.215L20.5 6"
+                                        mask="url(#mail-outline-psy3)" />
+                                </g>
+                            </svg>
+                            <span class="break-all">contact@dabadoc.com</span>
+                        </li>
+                    </ul>
+
+                    <a
+                        href="contact@dabadoc.com"
+                        class="inline-block border-2 border-[#203D35] text-[#203D35] font-semibold px-6 py-3 rounded-full hover:bg-[#203D35] hover:text-white text-center text-sm">
+                        En savoir plus
+                    </a>
                 </article>
 
             </div>
@@ -218,7 +1003,7 @@
                         class="inline-block bg-[#B95643] text-white font-semibold px-6 py-3 rounded-full hover:bg-[#9f4533] text-center w-full border-0 cursor-pointer">Envoyer</button>
                 </form>
             </div>
-        
+
         </section>
         <footer class="bg-[#203D35] text-[#F6F1E8] mt-0">
             <div class="max-w-6xl mx-auto px-5 py-12 grid gap-8 md:grid-cols-3">

@@ -8,10 +8,10 @@
         <link rel="stylesheet" href="../../public/css/input.css">
         <link rel="stylesheet" href="../../public/css/stayl.css">
     </head>
-    <body>
-        <header class="bg-white sticky top-0 z-50 shadow-sm">
+    <body class="relative">
+        <header class= " bg-white  top-0 z-50 shadow-sm">
             <div
-                class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+                class=" max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
                 <a href="../../index.html"
                     class="titre text-2xl font-extrabold text-[#295145]">Voix
                     <span class="text-[#B95643]">&amp;</span> Droits</a>
@@ -33,11 +33,70 @@
                         class="bg-[#B95643] text-white text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-[#9f4533]">Besoin
                         d’aide ?</a>
 
-                    <details class="md:hidden relative">
+                    <details class="md:hidden">
                         <summary
-                            class="cursor-pointer list-none border-2 border-[#203D35] rounded-full px-3 py-2 text-sm font-semibold">Menu</summary>
+                            class="cursor-pointer list-none border-2 border-[#203D35] rounded-full px-3 py-2 text-sm font-semibold"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24"
+                                overflow="visible">
+                                <defs>
+                                    <lineargradient id="menu-glass-g"
+                                        gradientUnits="userSpaceOnUse" x1="0"
+                                        y1="0" x2="0" y2="24">
+                                        <stop offset="0"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.78" />
+                                        <stop offset="1"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.36" />
+                                    </lineargradient>
+                                    <lineargradient id="menu-glass-ge"
+                                        gradientUnits="userSpaceOnUse" x1="0"
+                                        y1="0" x2="0" y2="24">
+                                        <stop offset="0"
+                                            stop-color="currentColor"
+                                            stop-opacity="1" />
+                                        <stop offset="1"
+                                            stop-color="currentColor"
+                                            stop-opacity="0.55" />
+                                    </lineargradient>
+                                    <mask id="menu-glass-gm"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <path d="M4 6L20 6" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 12L20 12" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M4 18L20 18" fill="none"
+                                            stroke="#fff" stroke-width="2.4"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </mask>
+                                    <mask id="menu-glass-gp"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                    </mask>
+                                    <mask id="menu-glass-go"
+                                        maskUnits="userSpaceOnUse" x="-2" y="-2"
+                                        width="28" height="28">
+                                        <rect x="-2" y="-2" width="28"
+                                            height="28" fill="#fff" />
+                                    </mask>
+                                </defs>
+                                <g mask="url(#menu-glass-gp)">
+                                </g>
+                                <rect x="-2" y="-2" width="28" height="28"
+                                    fill="url(#menu-glass-ge)"
+                                    mask="url(#menu-glass-gm)" />
+                            </svg></summary>
                         <div
-                            class="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg p-4 flex flex-col gap-3 text-sm font-medium">
+                            class="absolute right-0 mt-2 w-full bg-white rounded-xl shadow-lg p-4 flex flex-col gap-3 text-sm font-medium">
                             <a href="../../index.html"
                                 class="hover:text-[#B95643]">Accueil</a>
                             <a href="index.html#droits"
@@ -54,7 +113,8 @@
                 </div>
             </div>
         </header>
-        <section class="max-w-6xl bg-[#F6F1E8] text- mx-auto px-10 pt-14  pb-10">
+        <section
+            class="max-w-6xl bg-[#F6F1E8] text- mx-auto px-10 pt-14  pb-10">
             <p
                 class="text-xs font-semibold tracking-widest uppercase text-[#B95643]">Histoires
                 humaines</p>
@@ -73,9 +133,8 @@
                 <img src="../../public/images/imge02.jpg" alt="Éducation"
                     class="h-30 w-full object-cover">
                 <div
-                    class="h-15 bg-[#295145] text-white flex items-end p-5 text-sm">[Image
-                    : Éducation]</div>
-                <div class="p-6 space-y-3"><p
+                    class="h-15 bg-[#295145] text-white flex items-end p-5 text-sm"></div>
+                <div class="p-6 space-y-2"><p
                         class="text-xs font-semibold tracking-widest uppercase text-[#B95643]">Éducation</p><h2
                         class="titre text-2xl font-bold">Continuer d’étudier,
                         malgré tout</h2><p>Une jeune fille voit son avenir
@@ -87,9 +146,8 @@
                 <img src="../../public/images/image04.jpg" alt="Indépendance"
                     class="h-30 w-full object-cover">
                 <div
-                    class="h-15 bg-[#295145] text-white flex items-end p-5 text-sm">[Image
-                    : Indépendance]</div>
-                <div class="p-6 space-y-3"><p
+                    class="h-15 bg-[#295145] text-white flex items-end p-5 text-sm"></div>
+                <div class="p-6 space-y-2"><p
                         class="text-xs font-semibold tracking-widest uppercase text-[#B95643]">Indépendance</p><h2
                         class="titre text-2xl font-bold">Retrouver la maîtrise
                         de son budget</h2><p>Une femme veut gagner sa vie et
@@ -101,9 +159,8 @@
                 <img src="../../public/images/image05.png" alt="Sans violence"
                     class="h-30 w-full object-cover">
                 <div
-                    class="h-15 bg-[#B95643] text-white flex items-end p-5 text-sm">[Image
-                    : Sans violence]</div>
-                <div class="p-6 space-y-3"><p
+                    class="h-15 bg-[#B95643] text-white flex items-end p-5 text-sm"></div>
+                <div class="p-6 space-y-2"><p
                         class="text-xs font-semibold tracking-widest uppercase text-[#B95643]">Sans
                         violence</p><h2 class="titre text-2xl font-bold">Se
                         protéger, étape par étape</h2><p>Une femme cherche
@@ -115,9 +172,8 @@
                 <img src="../../public/images/image06.jpg"
                     alt="Égalité au travail" class="h-30 w-full object-cover">
                 <div
-                    class="h-15 bg-[#B95643] text-white flex items-end p-5 text-sm">[Image
-                    : Égalité au travail]</div>
-                <div class="p-6 space-y-3"><p
+                    class="h-15 bg-[#B95643] text-white flex items-end p-5 text-sm"></div>
+                <div class="p-6 space-y-2"><p
                         class="text-xs font-semibold tracking-widest uppercase text-[#B95643]">Égalité
                         au travail</p><h2 class="titre text-2xl font-bold">Un
                         salaire qui dit la même chose</h2><p>Une salariée fait
