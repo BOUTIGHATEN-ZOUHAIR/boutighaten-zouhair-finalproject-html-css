@@ -799,7 +799,7 @@
       mask-image: linear-gradient(to reght,transparent,black 30%);
     }
     .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_\%\)\] {
-      mask-image: linear-gradient(to right,transparent,black %);
+      mask-image: linear-gradient(to right,transparent,black 30%);
     }
     .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_3\%\)\] {
       mask-image: linear-gradient(to right,transparent,black 3%);
