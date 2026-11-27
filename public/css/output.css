@@ -35,6 +35,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --tracking-wide: 0.025em;
     --tracking-widest: 0.1em;
     --leading-tight: 1.25;
@@ -287,9 +288,6 @@
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
-  .w-70 {
-    width: calc(var(--spacing) * 70);
-  }
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
@@ -318,12 +316,6 @@
   .-translate-y-1\/2 {
     --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .scale-95 {
-    --tw-scale-x: 95%;
-    --tw-scale-y: 95%;
-    --tw-scale-z: 95%;
-    scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   .scale-100 {
     --tw-scale-x: 100%;
@@ -474,9 +466,6 @@
   .bg-\[\#F6F1E8\] {
     background-color: #F6F1E8;
   }
-  .bg-\[\#e6ded1\] {
-    background-color: #e6ded1;
-  }
   .bg-\[\#e7e1d6\] {
     background-color: #e7e1d6;
   }
@@ -599,6 +588,10 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
   }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
     font-weight: var(--font-weight-medium);
@@ -658,34 +651,10 @@
     transition-duration: 200ms;
   }
   @media (hover: hover) {
-    .hover\:scale-1:hover {
-      --tw-scale-x: 1%;
-      --tw-scale-y: 1%;
-      --tw-scale-z: 1%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-    .hover\:scale-70:hover {
-      --tw-scale-x: 70%;
-      --tw-scale-y: 70%;
-      --tw-scale-z: 70%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-    .hover\:scale-100:hover {
-      --tw-scale-x: 100%;
-      --tw-scale-y: 100%;
-      --tw-scale-z: 100%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
     .hover\:scale-105:hover {
       --tw-scale-x: 105%;
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
-      scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-    .hover\:scale-120:hover {
-      --tw-scale-x: 120%;
-      --tw-scale-y: 120%;
-      --tw-scale-z: 120%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
     .hover\:bg-\[\#9f4533\]:hover {
@@ -702,14 +671,6 @@
     }
     .hover\:text-white:hover {
       color: var(--color-white);
-    }
-    .hover\:transition-shadow:hover {
-      transition-property: box-shadow;
-      transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-      transition-duration: var(--tw-duration, var(--default-transition-duration));
-    }
-    .hover\:transition-discrete:hover {
-      transition-behavior: allow-discrete;
     }
   }
   .focus\:ring-2:focus {
@@ -804,10 +765,10 @@
   }
 }
 body {
-  font-family: Inter, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 .titre {
-  font-family: Fraunces,serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 .hero-element {
   position: absolute;
