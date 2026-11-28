@@ -786,32 +786,11 @@
     .md\:justify-between {
       justify-content: space-between;
     }
-    .md\:\[mask-image\:linear-gradient\(to_\,transparent\,black_30\%\)\] {
-      mask-image: linear-gradient(to ,transparent,black 30%);
-    }
     .md\:\[mask-image\:linear-gradient\(to_left\,transparent\,black_30\%\)\] {
       mask-image: linear-gradient(to left,transparent,black 30%);
     }
-    .md\:\[mask-image\:linear-gradient\(to_r\,transparent\,black_30\%\)\] {
-      mask-image: linear-gradient(to r,transparent,black 30%);
-    }
-    .md\:\[mask-image\:linear-gradient\(to_reght\,transparent\,black_30\%\)\] {
-      mask-image: linear-gradient(to reght,transparent,black 30%);
-    }
-    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_\%\)\] {
-      mask-image: linear-gradient(to right,transparent,black 30%);
-    }
-    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_3\%\)\] {
-      mask-image: linear-gradient(to right,transparent,black 3%);
-    }
-    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_10\%\)\] {
-      mask-image: linear-gradient(to right,transparent,black 10%);
-    }
     .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_30\%\)\] {
       mask-image: linear-gradient(to right,transparent,black 30%);
-    }
-    .md\:\[mask-image\:linear-gradient\(to_right\,transparent\,black_40\%\)\] {
-      mask-image: linear-gradient(to right,transparent,black 40%);
     }
     .md\:p-8 {
       padding: calc(var(--spacing) * 8);
